@@ -46,6 +46,7 @@ export const productJsonLd = product => ({
     description: product.description,
     sku: product.sku,
     mpn: product.mpn,
+    url: product.url,
     brand: {
         '@type': 'Brand',
         name: product.brand
@@ -62,17 +63,9 @@ export const productJsonLd = product => ({
             name: 'Brand Name'
         }
     },
-    review: {
-        '@type': 'Review',
-        reviewRating: {
-            '@type': 'Rating',
-            ratingValue: '4',
-            bestRating: '5'
-        },
-        aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4',
-            reviewCount: '23'
-        }
+    aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.3',
+        reviewCount: '23'
     }
 });
