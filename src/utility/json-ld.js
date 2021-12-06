@@ -21,6 +21,7 @@ export const restaurantJsonLd = restaurant => ({
         longitude: restaurant.geo.lng
     },
     menu: restaurant.menu_url,
+    servesCuisine: ["Indian", "Italian"],
     priceRange: restaurant.priceRange,
     openingHoursSpecification: [
         {
