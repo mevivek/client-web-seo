@@ -1,3 +1,5 @@
+const webUrl = "https://friendlyeats-d875f.web.app/";
+
 export const restaurantJsonLd = restaurant => ({
     '@context': 'http://schema.org',
     '@type': 'Restaurant',
@@ -46,7 +48,7 @@ export const productJsonLd = product => ({
     description: product.description,
     sku: product.sku,
     mpn: product.mpn,
-    url: product.url,
+    url: `${webUrl}catalogue/${product.slug}`,
     brand: {
         '@type': 'Brand',
         name: product.brand
